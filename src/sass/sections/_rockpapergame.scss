@@ -1,5 +1,66 @@
-.rsp{
-    &__title{
-        
+.rsp {
+    padding-bottom: 36px;
+
+    &__title {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 36px;
+    }
+
+    &__box {}
+
+    &__list {}
+
+    &__item {}
+
+    &__button {
+        padding: 10px;
+        border-radius: 20px;
+        background: #000;
+    }
+
+    &__img {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__catalog {}
+
+    &__product {}
+
+    &__text {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.7;
+    }
+
+    &__result {
+        color: #039900;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 36px;
+    }
+
+    &__btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: #FFF;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 36px;
+    }
+
+    &__line {
+        width: 536px;
+        height: 1px;
+        background-color: #000;
     }
 }
