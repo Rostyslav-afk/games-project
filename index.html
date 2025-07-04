@@ -5,16 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/games-project/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/games-project/assets/index-64966ad3.js"></script>
     <link rel="stylesheet" href="/games-project/assets/index-445fba1c.css">
   </head>
   <body>
-    <section>
+    <!-- <section>
       <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/games-project/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+      Path to images as from index.html file 
+      <img src="./img/javascript.svg" alt="" />
+    </section> -->
 
     <!-- Loads the specified .html file -->
     <header class="header">
@@ -62,7 +65,11 @@
         </div>
     </div>
 </header>
-    
+    <section class="date-birthday">
+    <h2 class="date-birthday__title">Перевір в який рік ти народився</h2>
+    <div class="date-birthday__box"><input type="text" placeholder="Введіть рік народження" class="date-birthday__number"><button><img src="" alt="" class="date-birthday__img"></button></div>
+    <p class="date-birthday__text"></p>
+    </section>
     ENOENT: no such file or directory, open '/home/runner/work/games-project/games-project/src/partials/randomnumber.html'
     <section class="rsp">
     <div class="container">
@@ -102,7 +109,19 @@
         <div class="rsp__line"></div>
     </div>
 </section>
-    
+    <section class="calculation">
+  <h2 class="calculation__title">Калькулятор</h2>
+  <input type="text" placeholder="Введіть число" class="calculation__numbers" />
+  <ul class="calculation__list">
+    <li class="calculation__item"><button class="calculation__btn">+</button></li>
+    <li class="calculation__item"><button class="calculation__btn">*</button></li>
+    <li class="calculation__item"><button class="calculation__btn">-</button></li>
+    <li class="calculation__item"><button class="calculation__btn">/</button></li>
+  </ul>
+  <input type="text" , placeholder="Введіть число" class="calculation__numbers" />
+  <div class="calculation__box">=</div>
+  <p class="calculation__result">Результат</p>
+</section>
     
     <section class="google-dino">
     <div class="container">
@@ -156,7 +175,35 @@
 </section>
 
     
-    
+    <footer class="footer">
+    <a href="../index.html" class="footer__logo">
+        <img src="" alt="logo" class="logo__img">
+    </a>
+    <ul class="footer__list">
+        <li class="list__item">
+            <p class="list__text">Тел:<a href="tel:+381234567890" class="list__link">+38 (123) 456 78 90</a></p>
+        </li>
+        <li class="list__item">
+            <p class="list__text">E-Mail:<a href="mailto:codingmagic@gmail.com" class="list__link">codingmagic@gmail.com</a></p>
+        </li>
+        <li class="list__item">
+            <p class="list__text">Facebook:<a href="#" class="list__link">CodingMagic</a></p>
+        </li>
+        <li class="list__item">
+            <p class="list__text">Twitter:<a href="#" class="list__link">CodingMagic</a></p>
+        </li>
+        <li class="list__item">
+            <p class="list__text">Instagram:<a href="#" class="list__link">CodingMagic</a></p>
+        </li>
+    </ul>
+<div class="footer__box">
+    <ul class="box__list">
+        <li class="box__item"><input type="gmail" placeholder="Ваша ел. адреса..." class="box__inp"></li>
+        <li class="box__item"><button type="submit" class="box__btn">Підписатись</button></li>
+    </ul>
+    <p class="box__text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+</div>
+</footer>
 
     
   </body>
