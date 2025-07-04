@@ -101,9 +101,7 @@ table {
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-align: center;
   padding-bottom: 36px;
 }
@@ -122,4 +120,13 @@ table {
   padding: 10px 20px;
   text-align: center;
   border: none;
+  margin-bottom: 36px;
+}
+
+.choose-number-text {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
