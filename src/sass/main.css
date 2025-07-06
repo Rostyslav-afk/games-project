@@ -44,6 +44,74 @@ body {
   outline: 1px solid red;
 }
 
+.rsp {
+  padding-bottom: 36px;
+  text-align: center;
+}
+.rsp__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+.rsp__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 104px;
+}
+.rsp__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.rsp__button {
+  padding: 10px;
+  border-radius: 20px;
+  background: #000;
+  border: none;
+}
+.rsp__img {
+  width: 40px;
+  height: 40px;
+}
+.rsp__text {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.rsp__result {
+  color: #039900;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.rsp__btn {
+  border: none;
+  border-radius: 20px;
+  background: #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #FFF;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+.rsp__line {
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+}
+
 .timeCalcul_title {
   color: #000;
   font-family: "Montserrat Alternates";
