@@ -15,7 +15,7 @@ function jump() {
 
     setTimeout(() => {
       dino.classList.remove("jump");
-    }, 300);
+    }, 500);
   }
 }
 
@@ -24,7 +24,7 @@ function startGame() {
 
   gameStarted = true;
 
-  cactus.style.animation = "cactusMove 1s infinite linear";  
+  cactus.style.animation = "cactusMove 2s infinite linear";  
 
   gameInterval = setInterval(() => {
     if (gameOver) return;

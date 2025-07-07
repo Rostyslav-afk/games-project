@@ -11,11 +11,12 @@
     const thirdNumber = Number(document.getElementById("choose-number-input-3").value);
 
     const allNumbers = [firstNumber, secondNumber, thirdNumber];
+    console.log(allNumbers);
 
     if (allNumbers.some(isNaN)) {
       document.getElementById("choose-number-text-1").textContent = "Найбільше число, яке ви ввели -";
     document.getElementById("choose-number-text-2").textContent = `Найменше число, яке ви ввели -`;
-    document.getElementById("choose-number-text-3").textContent = `Середне число, яке ви ввели - `;
+    document.getElementById("choose-number-text-3").textContent = `Середне число, яке ви ввели - `;  
     }
 
     else {
