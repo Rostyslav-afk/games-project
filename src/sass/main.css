@@ -68,6 +68,12 @@ body {
   justify-content: center;
   gap: 50px;
 }
+.header__item {
+  position: relative;
+}
+.header .hover:hover .header__modal {
+  opacity: 1;
+}
 .header__text {
   color: #000;
   font-family: "Montserrat Alternates";
@@ -86,13 +92,49 @@ body {
   transform: rotate(180deg);
 }
 .header__modal {
-  display: none;
+  opacity: 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 0px 0px 20px 20px;
+  width: 160px;
+  height: 105px;
+  position: absolute;
+  transition: all 0.3s ease;
 }
-.header__modal-text {
+.header__modal-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__modal-button {
   color: #000;
+  background-color: #fff;
   font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+}
+.header__modal-button:hover {
+  background-color: #F1F1F1;
+}
+.header__modal-button:hover .b3 {
+  border-radius: 0px 0px 20px 20px;
+}
+.header__modal .b1 {
+  padding-right: 48px;
+  padding-left: 49px;
+}
+.header__modal .b2 {
+  padding-right: 54px;
+  padding-left: 56px;
+}
+.header__modal .b3 {
+  padding-right: 38px;
+  padding-left: 40px;
+  border-radius: 0px 0px 20px 20px;
 }
 .header__catalog {
   display: flex;
@@ -214,6 +256,7 @@ body {
   width: 536px;
   height: 1px;
   background-color: #000;
+  margin: 0 auto;
 }
 
 .timeCalcul_title {
