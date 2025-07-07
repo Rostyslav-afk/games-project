@@ -24,7 +24,7 @@ function startGame() {
 
   gameStarted = true;
 
-  cactus.style.animation = "cactusMove 1s infinite linear";  // nazar! If cactus for you very fast edit this parameter  
+  cactus.style.animation = "cactusMove 1s infinite linear";  
 
   gameInterval = setInterval(() => {
     if (gameOver) return;

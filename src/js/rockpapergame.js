@@ -9,6 +9,8 @@ const playerText = document.querySelector(".you");
 
 const showAiChoice = document.querySelector(".rsp__btn");
 
+const sound = document.querySelector(".rsp__audio");
+
 const choice = ["stone", "scissors", "paper"];
 
 let playerChoice = "";
@@ -19,19 +21,21 @@ let aiScore = 0;
 
 stoneButton.addEventListener("click", (event) => {
     playerChoice = choice[0];
-    console.log(playerChoice);
+    sound.play();
     getAiChoice();
     checkChoices();
 });
 
 scissorsButton.addEventListener("click", (event) => {
     playerChoice = choice[1];
+    sound.play();
     getAiChoice();
     checkChoices();
 });
 
 paperButton.addEventListener("click", (event) => {
     playerChoice = choice[2];
+    sound.play();
     getAiChoice();
     checkChoices();
 });
