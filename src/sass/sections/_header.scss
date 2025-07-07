@@ -2,7 +2,7 @@
     padding-top: 21px;
     padding-bottom: 21px;
 
-    .box{
+    .box {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -17,7 +17,7 @@
         align-items: center;
         justify-content: center;
         gap: 363px;
-        }
+    }
 
     &__nav {}
 
@@ -28,14 +28,23 @@
         gap: 50px;
     }
 
-    &__item {}
+    &__item {
+        position: relative;
+    }
+
+    .hover:hover{
+        .header__modal{
+            opacity: 1;
+        }
+    }
 
     &__text {
         color: #000;
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-weight: 400;
-        &:nth-child(1){
+
+        &:nth-child(1) {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -50,16 +59,59 @@
     }
 
     &__modal {
-        display: none;
-        &-list {}
+        opacity: 0;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 0px 0px 20px 20px;
+        width: 160px;
+        height: 105px;
+        position: absolute;
+        transition: all 0.3s ease;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
 
         &-item {}
 
-        &-text {
+        &-button {
             color: #000;
+            background-color: #fff;
             font-family: "Montserrat Alternates";
             font-size: 12px;
             font-weight: 400;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: all 0.3s;
+        }
+
+        &-button:hover {
+            background-color: #F1F1F1;
+        }
+
+        &-button:hover {
+            .b3 {
+                border-radius: 0px 0px 20px 20px;
+            }
+        }
+
+        .b1 {
+            padding-right: 48px;
+            padding-left: 49px;
+        }
+
+        .b2 {
+            padding-right: 54px;
+            padding-left: 56px
+        }
+
+        .b3 {
+            padding-right: 38px;
+            padding-left: 40px;
+            border-radius: 0px 0px 20px 20px;
         }
 
     }
