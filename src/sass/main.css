@@ -44,6 +44,21 @@ body {
   outline: 1px solid red;
 }
 
+.dark-mode {
+  background-color: #333333;
+  color: #fff;
+  transition: 0.3s;
+}
+.dark-mode .container {
+  background-color: #333333;
+}
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5 {
+  color: #fff;
+}
+.dark-mode a, .dark-mode p {
+  color: #fff;
+}
+
 .header {
   padding-top: 21px;
   padding-bottom: 21px;
