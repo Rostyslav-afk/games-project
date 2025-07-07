@@ -44,11 +44,11 @@ function checkGoal() {
   }
 }
 
-const goal = document.querySelector(".ball"); // або #goal, якщо це ID
-const rect = goal.getBoundingClientRect();
+// const goal = document.querySelector(".ball"); 
+// const rect = goal.getBoundingClientRect();
 
-console.log("Координати ball:");
-console.log("top:", rect.top);
-console.log("left:", rect.left);
-console.log("right:", rect.right);
-console.log("bottom:", rect.bottom);
+// console.log("Координати ball:");
+// console.log("top:", rect.top);
+// console.log("left:", rect.left);
+// console.log("right:", rect.right);
+// console.log("bottom:", rect.bottom);
