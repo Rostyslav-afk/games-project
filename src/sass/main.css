@@ -671,7 +671,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  margin-left: 185px;
+  margin-left: auto;
 }
 .footer .box__list {
   display: flex;
@@ -708,4 +708,48 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.modal {
+  padding: 69px 42px 70px 43px;
+  display: none;
+  border-radius: 20px;
+  background: #fff;
+  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal__btn {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.modal__list {
+  display: flex;
+  gap: 65px;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+.modal__img {
+  width: 30px;
+  height: 30px;
+}
+.modal__title {
+  color: #000;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 14px;
+}
+.modal__lists {
+  display: flex;
+  gap: 230px;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
