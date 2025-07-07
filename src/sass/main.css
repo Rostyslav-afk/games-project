@@ -332,6 +332,14 @@ body {
   text-align: center;
 }
 
+.football-text {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
 #field {
   width: 720px;
   height: 220px;
@@ -350,6 +358,16 @@ body {
   width: 40px;
   height: 40px;
   transition: all 1s;
+}
+
+.goal {
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  right: 0;
+  top: 55px;
+  box-sizing: border-box;
+  transform: rotate(90deg);
 }
 
 .choose-number {

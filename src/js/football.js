@@ -1,32 +1,54 @@
  field.onclick = function(event) {
+  let fieldCoords = this.getBoundingClientRect();
 
-      // координати поля щодо вікна браузера
-      let fieldCoords = this.getBoundingClientRect();
+  let ballCoords = {
+    top: event.clientY - fieldCoords.top - field.clientTop - ball.clientHeight / 2,
+    left: event.clientX - fieldCoords.left - field.clientLeft - ball.clientWidth / 2
+  };
 
-      // м’яч має абсолютне позиціювання (position:absolute), поле -- відносне (position:relative)
-      // таким чином, координати м’яча розраховуються відносно внутрішнього, верхнього лівого кута поля.
-      let ballCoords = {
-        top: event.clientY - fieldCoords.top - field.clientTop - ball.clientHeight / 2,
-        left: event.clientX - fieldCoords.left - field.clientLeft - ball.clientWidth / 2
-      };
+  if (ballCoords.top < 0) ballCoords.top = 0;
+  if (ballCoords.left < 0) ballCoords.left = 0;
+  if (ballCoords.left + ball.clientWidth > field.clientWidth) {
+    ballCoords.left = field.clientWidth - ball.clientWidth;
+  }
+  if (ballCoords.top + ball.clientHeight > field.clientHeight) {
+    ballCoords.top = field.clientHeight - ball.clientHeight;
+  }
 
-      // забороняємо перетинати верхню межу поля
-      if (ballCoords.top < 0) ballCoords.top = 0;
+  ball.style.left = ballCoords.left + 'px';
+  ball.style.top = ballCoords.top + 'px';
 
-      // забороняємо перетинати ліву межу поля
-      if (ballCoords.left < 0) ballCoords.left = 0;
+  checkGoal(); 
+};
 
+//     const goal = document.querySelector(".goal"); // або #goal, якщо це ID
+// const rect = goal.getBoundingClientRect();
 
-      // забороняємо перетинати праву межу поля
-      if (ballCoords.left + ball.clientWidth > field.clientWidth) {
-        ballCoords.left = field.clientWidth - ball.clientWidth;
-      }
+// console.log("top:", rect.top);
+// console.log("left:", rect.left);
+// console.log("right:", rect.right);
+// console.log("bottom:", rect.bottom);
 
-      // забороняємо перетинати нижню межу поля
-      if (ballCoords.top + ball.clientHeight > field.clientHeight) {
-        ballCoords.top = field.clientHeight - ball.clientHeight;
-      }
+function checkGoal() {
+  const ballRect = document.getElementById("ball").getBoundingClientRect();
+  const goalRect = document.querySelector(".goal").getBoundingClientRect();
 
-      ball.style.left = ballCoords.left + 'px';
-      ball.style.top = ballCoords.top + 'px';
-    }
+  const isGoal =
+    ballRect.right > goalRect.left &&
+    ballRect.left < goalRect.right &&
+    ballRect.bottom > goalRect.top &&
+    ballRect.top < goalRect.bottom;
+
+  if (isGoal) {
+    document.getElementsByClassName("football-text")[0].textContent = `Ви забили ГОЛ`;
+  }
+}
+
+const goal = document.querySelector(".ball"); // або #goal, якщо це ID
+const rect = goal.getBoundingClientRect();
+
+console.log("Координати ball:");
+console.log("top:", rect.top);
+console.log("left:", rect.left);
+console.log("right:", rect.right);
+console.log("bottom:", rect.bottom);
