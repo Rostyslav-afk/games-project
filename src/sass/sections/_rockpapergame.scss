@@ -1,9 +1,102 @@
-.rsp{
-    &__title{
-
+.rsp {
+    padding-bottom: 36px;
+    text-align: center;
+    &__title {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 36px;
     }
 
-    &__box{
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 104px;
+    }
 
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 38px;
+    }
+
+    &__item {}
+
+    &__button {
+        padding: 10px;
+        border-radius: 20px;
+        background: #000;
+        border: none;
+        transition: all 0.3s;
+    }
+
+    &__button:hover{
+        transform: scale(1.3) rotate(-45deg);
+    }
+
+    &__img {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__catalog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__product {}
+
+    &__text {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.7;
+    }
+
+    &__result {
+        color: #039900;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    &__btn {
+        border: none;
+        border-radius: 20px;
+        background: #000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: #FFF;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 36px;
+        transition: all 0.3s;
+    }
+
+    &__btn:hover{
+        transform: scale(1.3);
+    }
+
+    &__line {
+        width: 536px;
+        height: 1px;
+        background-color: #000;
+        margin:0 auto;
+    }
+
+    &__audio{
+        display: none;
     }
 }
