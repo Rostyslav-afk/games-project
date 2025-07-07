@@ -15,8 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
     rel="stylesheet">
   
-  <script type="module" crossorigin src="/games-project/assets/index-3d978327.js"></script>
-  <link rel="stylesheet" href="/games-project/assets/index-f14ab61c.css">
+  <script type="module" crossorigin src="/games-project/assets/index-1582eaa7.js"></script>
+  <link rel="stylesheet" href="/games-project/assets/index-334c86cf.css">
 </head>
 
 <body>
@@ -74,40 +74,63 @@
   <section class="rsp">
     <div class="container">
         <h2 class="rsp__title">Камінь - ножиці - папір</h2>
-        <div class="rsp__box">
-            <ul class="rsp__list">
-                <li class="rsp__item">
-                    <button class="rsp__button stone">
-                        <img src="../img/photo/stone.webp" alt="" class="rsp__img">
-                    </button>
-                </li>
-                <li class="rsp__item">
-                    <button class="rsp__button scissors">
-                        <img src="../img/photo/scissors.webp" alt="" class="rsp__img">
-                    </button>
-                </li>
-                <li class="rsp__item">
-                    <button class="rsp__button paper">
-                        <img src="../img/photo/paper.webp" alt="" class="rsp__img">
-                    </button>
-                </li>
-            </ul>
-            <ul class="rsp__catalog">
-                <li class="rsp__product">
-                    <p class="rsp__text">Рахунок:</p>
-                </li>
-                <li class="rsp__product pc">
-                    <p class="rsp__text">Комп'ютер - 0</p>
-                </li>
-                <li class="rsp__product you">
-                    <p class="rsp__text">Ви - 0</p>
-                </li>
-            </ul>
+        <div class="rsp__wrapper">
+            <div class="rsp__mods">
+                <h3 class="rsp__mods-title">Режими гри:</h3>
+                <p class="rsp__mods-rang">Ваш ранг: Noob🤓</p>
+                <div class="rsp__mods-list">
+                    <button type="button" class="rsp__mods-instruction">Інструкція</button>
+                    <button type="button" class="rsp__mods-40seconds">40 секунд</button>
+                    <button type="button" class="rsp__mods-50points">50 очок</button>
+                </div>
+            </div>
+            <div class="rsp__box">
+                <ul class="rsp__list">
+                    <li class="rsp__item">
+                        <button class="rsp__button stone">
+                            <img src="../img/photo/stone.webp" alt="" class="rsp__img">
+                        </button>
+                    </li>
+                    <li class="rsp__item">
+                        <button class="rsp__button scissors">
+                            <img src="../img/photo/scissors.webp" alt="" class="rsp__img">
+                        </button>
+                    </li>
+                    <li class="rsp__item">
+                        <button class="rsp__button paper">
+                            <img src="../img/photo/paper.webp" alt="" class="rsp__img">
+                        </button>
+                    </li>
+                </ul>
+                <ul class="rsp__catalog">
+                    <li class="rsp__product">
+                        <p class="rsp__text">Рахунок:</p>
+                    </li>
+                    <li class="rsp__product pc">
+                        <p class="rsp__text">Комп'ютер - 0</p>
+                    </li>
+                    <li class="rsp__product you">
+                        <p class="rsp__text">Ви - 0</p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <p class="rsp__result">Ви виграли раунд!</p>
         <button class="rsp__btn">Варіант комп’ютера</button>
         <div class="rsp__line"></div>
         <audio src="../sounds/pop.mp3" class="rsp__audio"></audio>
+    </div>
+    <div class="rsp__modal">
+        <h2 class="rsp__modal-title">Інструкція:</h2>
+        <ul class="rsp__modal-list">
+            <li class="rsp__modal-item">
+                <p class="rsp__modal-text">40 секунд - Тобі потрібно набрати 20 очок за 40 секунд, граючи швидко та обережно.</p>
+            </li>
+            <li class="rsp__modal-item">
+                <p class="rsp__modal-text">У другому режимі маєш 50 секунд, щоб досягти 50 очок — тут важлива не тільки швидкість, а й витримка.</p>
+            </li>
+        </ul>
+        <p class="rsp__modal-close">X</p>
     </div>
 </section>
   <section class="calculation">
@@ -259,27 +282,27 @@
     </ul>
 <div class="box">
     <ul class="box__list">
-        <li class="box__item"><input type="gmail" placeholder="Ваша ел. адреса..." class="box__inp"></li>
+        <li class="box__item"><input type="email'" placeholder="Ваша ел. адреса..." class="box__inp"></li>
         <li class="box__item"><button type="submit" class="box__btn">Підписатись</button></li>
     </ul>
     <p class="box__text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
 </div>
 </div>
 </footer>
-  <div class="backdrop">
+  
     <div class="modal">
-        <button type="button" class="modal__btn"><img src="" alt="" class="modal__photo"></button>
+        <button type="button" class="modal__btn"><img src="../img/photo/icon-close.webp" alt="close" class="modal__photo"></button>
         <ul class="modal__list">
-            <li class="modal__item"><img src="" alt="" class="modal__img"></li>
-            <li class="modal__item"><h1 class="modal__titile">Дякую за підписку!</h1></li>
-            <li class="modal__item"><img src="" alt="" class="modal__img"></li>
+            <li class="modal__item"><img src="../img/photo/sword.webp" alt="sword" class="modal__img"></li>
+            <li class="modal__item"><h1 class="modal__title">Дякую за підписку!</h1></li>
+            <li class="modal__item"><img src="../img/photo/console.webp" alt="console" class="modal__img"></li>
         </ul>
         <ul class="modal__lists">
-            <li class="modal__items"><img src="" alt="" class="modal__img"></li>
-            <li class="modal__items"><img src="" alt="" class="modal__img"></li>
+            <li class="modal__items"><img src="../img/photo/puzzle.webp" alt="puzzle" class="modal__img"></li>
+            <li class="modal__items"><img src="../img/photo/game.webp" alt="game" class="modal__img"></li>
         </ul>
     </div>
-</div>
+
   <section class="modal_name">
   <button type="button" class="modal_name__close"></button>
 
