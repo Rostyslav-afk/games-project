@@ -36,6 +36,10 @@ body {
   font-family: "Roboto";
 }
 
+body {
+  background-image: url(../../img/photo/bg.webp);
+}
+
 .container {
   width: 1130px;
   padding-right: 20px;
@@ -233,10 +237,21 @@ body {
   border-radius: 20px;
   background: #000;
   border: none;
+  transition: all 0.3s;
+}
+.rsp__button:hover {
+  transform: scale(1.3) rotate(-45deg);
 }
 .rsp__img {
   width: 40px;
   height: 40px;
+}
+.rsp__catalog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 }
 .rsp__text {
   color: #000;
@@ -266,12 +281,19 @@ body {
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 36px;
+  transition: all 0.3s;
+}
+.rsp__btn:hover {
+  transform: scale(1.3);
 }
 .rsp__line {
   width: 536px;
   height: 1px;
   background-color: #000;
   margin: 0 auto;
+}
+.rsp__audio {
+  display: none;
 }
 
 .timeCalcul_title {
