@@ -55,6 +55,32 @@ table {
   background-color: white;
 }
 
+.date-birthday {
+  height: 160px;
+  border: 1px, 0px, 1px, 0px;
+  border-color: #000000;
+}
+
+.date-birthday__tilte {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-bottom: 36px;
+}
+
+.date-birthday__box {
+  width: 160px;
+  height: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
 .football-main-div {
   display: flex;
   justify-content: center;
