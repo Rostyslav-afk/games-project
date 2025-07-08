@@ -62,6 +62,12 @@ body {
 .dark-mode a, .dark-mode p {
   color: #fff;
 }
+.dark-mode .rsp__modal {
+  background: #333333;
+}
+.dark-mode .rsp__modal-close {
+  color: #fff;
+}
 
 .header {
   padding-top: 21px;
