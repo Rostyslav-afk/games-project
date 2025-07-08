@@ -75,3 +75,27 @@ function getAiChoice (){
 showAiChoice.addEventListener("click", (event) => {
     alert(`Вибір комп'ютера був "${aiChoice}"`);
 });
+
+
+
+// MODS INSTRUCTION
+const instructionModal = document.querySelector(".rsp__modal");
+const instructionModalBackdrop = document.querySelector(".backdrop");
+const instructionModalClose = document.querySelector(".rsp__modal-close");
+
+const instructionButton = document.querySelector(".rsp__mods-instruction");
+const fourtySecondsButton = document.querySelector(".rsp__mods-40seconds");
+const fiftyPointsButton = document.querySelector(".rsp__mods-50points");
+
+
+instructionButton.addEventListener("click", (event) => {
+    instructionModal.style.opacity = "1";
+    instructionModalBackdrop.style.opacity = "1";
+    instructionModalBackdrop.style.pointerEvents = "all";
+});
+
+instructionModalClose.addEventListener("click", (event) => {
+    instructionModal.style.opacity = "0";
+    instructionModalBackdrop.style.opacity = "0";
+    instructionModalBackdrop.style.pointerEvents = "none";
+});
