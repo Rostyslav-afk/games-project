@@ -17,5 +17,5 @@ const convertTime = () => {
   document.getElementById('result').innerText = formatted;
 };
 
-// Підключення функції до кнопки
+
 document.querySelector('.time__button').addEventListener('click', convertTime);
