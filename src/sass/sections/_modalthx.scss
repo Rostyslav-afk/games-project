@@ -1,0 +1,43 @@
+.modal {
+    padding: 69px 42px 70px 43px;
+    display: none;
+  border-radius: 20px;
+  background: #fff;
+  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__btn {
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  &__list {
+    display: flex;
+    gap: 65px;
+    justify-content: center;
+    margin-bottom: 38px;
+  }
+  &__img {
+    width: 30px;
+    height: 30px;
+  }
+  &__title {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 14px;
+  }
+  &__lists {
+    display: flex;
+    gap: 230px;
+    align-items: center;
+    justify-content: center;
+  }
+}

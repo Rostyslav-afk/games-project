@@ -1,39 +1,66 @@
 <section class="rsp">
     <div class="container">
         <h2 class="rsp__title">Камінь - ножиці - папір</h2>
-        <div class="rsp__box">
-            <ul class="rsp__list">
-                <li class="rsp__item">
-                    <button class="rsp__button stone">
-                        <img src="../img/photo/stone.webp" alt="" class="rsp__img">
-                    </button>
-                </li>
-                <li class="rsp__item">
-                    <button class="rsp__button scissors">
-                        <img src="../img/photo/scissors.webp" alt="" class="rsp__img">
-                    </button>
-                </li>
-                <li class="rsp__item">
-                    <button class="rsp__button paper">
-                        <img src="../img/photo/paper.webp" alt="" class="rsp__img">
-                    </button>
-                </li>
-            </ul>
-            <ul class="rsp__catalog">
-                <li class="rsp__product">
-                    <p class="rsp__text">Рахунок:</p>
-                </li>
-                <li class="rsp__product pc">
-                    <p class="rsp__text">Комп'ютер - 0</p>
-                </li>
-                <li class="rsp__product you">
-                    <p class="rsp__text">Ви - 0</p>
-                </li>
-            </ul>
+        <div class="rsp__wrapper">
+            <div class="rsp__mods">
+                <h3 class="rsp__mods-title">Режими гри:</h3>
+                <p class="rsp__mods-rang">Ваш ранг: Noob🤓</p>
+                <div class="rsp__mods-list">
+                    <button type="button" class="rsp__mods-instruction">Інструкція</button>
+                    <button type="button" class="rsp__mods-40seconds">40 секунд</button>
+                    <button type="button" class="rsp__mods-50points">50 очок</button>
+                </div>
+            </div>
+            <div class="rsp__box">
+                <ul class="rsp__list">
+                    <li class="rsp__item">
+                        <button class="rsp__button stone">
+                            <img src="../img/photo/stone.webp" alt="stone" class="rsp__img">
+                        </button>
+                    </li>
+                    <li class="rsp__item">
+                        <button class="rsp__button scissors">
+                            <img src="../img/photo/scissors.webp" alt="scissors" class="rsp__img">
+                        </button>
+                    </li>
+                    <li class="rsp__item">
+                        <button class="rsp__button paper">
+                            <img src="../img/photo/paper.webp" alt="paper" class="rsp__img">
+                        </button>
+                    </li>
+                </ul>
+                <ul class="rsp__catalog">
+                    <li class="rsp__product">
+                        <p class="rsp__text">Рахунок:</p>
+                    </li>
+                    <li class="rsp__product pc">
+                        <p class="rsp__text">Комп'ютер - 0</p>
+                    </li>
+                    <li class="rsp__product you">
+                        <p class="rsp__text">Ви - 0</p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <p class="rsp__result">Ви виграли раунд!</p>
         <button class="rsp__btn">Варіант комп’ютера</button>
         <div class="rsp__line"></div>
         <audio src="../sounds/pop.mp3" class="rsp__audio"></audio>
+    </div>
+    <div class="backdrop">
+        <div class="rsp__modal">
+            <h2 class="rsp__modal-title">Інструкція:</h2>
+            <ul class="rsp__modal-list">
+                <li class="rsp__modal-item">
+                    <p class="rsp__modal-text">40 секунд - Тобі потрібно набрати 20 очок за 40 секунд, граючи швидко та
+                        обережно.</p>
+                </li>
+                <li class="rsp__modal-item">
+                    <p class="rsp__modal-text">У другому режимі маєш 50 секунд, щоб досягти 50 очок — тут важлива не
+                        тільки швидкість, а й витримка.</p>
+                </li>
+            </ul>
+            <button type="button" class="rsp__modal-close">X</button>
+        </div>
     </div>
 </section>
