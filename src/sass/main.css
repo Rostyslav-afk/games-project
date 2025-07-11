@@ -228,16 +228,17 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-align: center;
-  padding-bottom: 36px;
 }
 
 .date-birthday__box {
-  width: 160px;
-  height: 15px;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
+  border-radius: 20px;
+  width: 215px;
+  height: 35px;
+  background: #D7D7D7;
+  display: inline-flex;
+  padding: 10px 10px 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -650,155 +651,10 @@ body {
   padding: 8px 20px;
   border-radius: 20px;
   font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  background-color: #3cba54;
-  color: white;
-  cursor: pointer;
-}
-.dino-buttons button:hover {
-  background-color: #2e8b43;
-}
-
-.date-birthday {
-  height: 160px;
-  border: 1px, 0px, 1px, 0px;
-  border-color: #000000;
-  padding-left: 257px;
-  padding-right: 257px;
-}
-
-.date-birthday__title {
-  color: #000;
   color: #fff;
   font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;
-  line-height: normal;
-  padding-bottom: 36px;
-  text-align: center;
-}
-
-.date-birthday__box {
-  display: inline-flex;
-  justify-content: space-between;
-    align-items: center;
-  border-radius: 20px;
-  width: 215px;
-  height: 35px;
-  background: #D7D7D7;
-  overflow: hidden;
-padding-left: 10px;
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-
-}
-
-.date-birthday__number {
-  border: none;
-  background-color: #D7D7D7;
-  color: #7E7E7E;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.date-birthday__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35px;
-  width: 35px;
-  background-color: #000;
-}
-
-.date-birthday__img {
-  height: 18px;
-  width: 18px;
-}
-
-.date-birthday__text{
-  border: solid red;
-  display: inline;
-  margin-left: 149px;
-  text-align: right;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.random-number {
-  height: 160px;
-  border: 1px, 0px, 1px, 0px;
-  border-color: #000000;
-  padding-left: 257px;
-  padding-right: 257px;
-}
-
-.random-number__title{
-  color: #000;
-  font-family: "Montserrat Alternates";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding-bottom: 36px;
-  text-align: center;
-}
-
-.random-number__box{
-  display: inline-flex;
-  justify-content: space-between;
-    align-items: center;
-  border-radius: 20px;
-  width: 150px;
-  height: 35px;
-  background: #D7D7D7;
-  overflow: hidden;
-padding-left: 10px;
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-
-}
-
-.random-number__number{
-  border: none;
-  background-color: #D7D7D7;
-  color: #7E7E7E;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-width: 100px;
-}
-
-.random-number__img{
-  height: 18px;
-  width: 18px;
-}
-
-.random-number__text{
-  border: solid red;
-  display: inline;
-  margin-left: 202px;
-  text-align: right;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.random-number__btn {
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35px;
-  width: 35px;
-  background-color: #000;
   line-height: 1.25;
   cursor: pointer;
   background-color: #000;
@@ -824,7 +680,7 @@ line-height: normal;
   text-align: center;
 }
 
-.football-text {
+.goal-counter {
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 12px;
@@ -842,6 +698,17 @@ line-height: normal;
   overflow: hidden;
   cursor: pointer;
   border-radius: 37px;
+}
+
+.goalkeeper {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 15px;
+  height: 40px;
+  background-color: #444;
+  border-radius: 4px;
+  transition: left 0.1s;
 }
 
 #ball {
@@ -1066,4 +933,4 @@ line-height: normal;
   gap: 230px;
   align-items: center;
   justify-content: center;
-}
+}/*# sourceMappingURL=main.css.map */

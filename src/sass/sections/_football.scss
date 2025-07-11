@@ -15,7 +15,7 @@ margin-bottom: 20px;
 text-align: center;
 }
 
-.football-text {
+.goal-counter {
     color: #000;
 font-family: "Montserrat Alternates";
 font-size: 12px;
@@ -35,6 +35,18 @@ margin-bottom: 36px;
       cursor: pointer;
       border-radius: 37px;
     }
+
+    .goalkeeper {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 15px;
+  height: 40px;
+  background-color: #444;
+  border-radius: 4px;
+  transition: left 0.1s;
+}
+
 
     #ball {
       position: absolute;
