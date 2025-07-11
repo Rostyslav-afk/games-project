@@ -49,7 +49,6 @@ function startGame() {
       window.getComputedStyle(cactus).getPropertyValue('left')
     );
 
-    // Колізія
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
       gameOverFlag = true;
       clearInterval(gameInterval);
@@ -59,7 +58,6 @@ function startGame() {
       startBtn.style.display = 'none';
       restartBtn.style.display = 'inline-block';
 
-      // Запис рекорду
       if (score > record) {
         record = score;
         localStorage.setItem('dinoRecord', record);
@@ -68,14 +66,12 @@ function startGame() {
       return;
     }
 
-    // Підрахунок пройдених кактусів
     if (cactusLeft < 0 && !cactusPassed) {
       score++;
       scoreEl.textContent = `Pахунок: ${score}`;
       cactusPassed = true;
     }
 
-    // Скидання прапорця, коли кактус повертається вправо
     if (cactusLeft > 300) {
       cactusPassed = false;
     }
