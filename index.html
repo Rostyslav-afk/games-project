@@ -15,8 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
     rel="stylesheet">
   
-  <script type="module" crossorigin src="/games-project/assets/index-912ea73a.js"></script>
-  <link rel="stylesheet" href="/games-project/assets/index-65f0b732.css">
+  <script type="module" crossorigin src="/games-project/assets/index-19f3ca70.js"></script>
+  <link rel="stylesheet" href="/games-project/assets/index-aabb29ce.css">
 </head>
 
 <body>
@@ -339,8 +339,17 @@
         </ul>
     </div>
 
-  <section class="modal_name">
-  <button type="button" class="modal_name__close"></button>
+  <section class="modal__name hidden">
+  <button type="button" class="modal__name__close" aria-label="Закрити модалку">
+    <svg
+      viewBox="0 0 24 24"
+      class="close-icon"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line x1="4" y1="4" x2="20" y2="20" />
+      <line x1="20" y1="4" x2="4" y2="20" />
+    </svg>
+  </button>
 
   <div class="modal_name__text">
     <p class="modal_name__hello">Привіт!</p>
@@ -360,13 +369,6 @@
       placeholder="Ваше ім’я..."
     />
     <button class="modal_name__button">Зберегти</button>
-  </div>
-
-  <div class="modal_name__icons">
-    <img src="" alt="" class="modal_name__icon" />
-    <img src="" alt="" class="modal_name__icon" />
-    <img src="" alt="" class="modal_name__icon" />
-    <img src="" alt="" class="modal_name__icon" />
   </div>
 </section>
 
