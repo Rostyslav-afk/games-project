@@ -1236,6 +1236,17 @@ body {
   font-family: sans-serif;
   z-index: 1000;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: modal 0.6s ease forwards;
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 .modal__name .hidden {
   display: none;
