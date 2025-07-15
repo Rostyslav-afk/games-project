@@ -91,6 +91,18 @@ function checkChoices() {
         playerText.textContent = `Ви - ${playerScore}`;
         computerText.textContent = `Комп'ютер - ${aiScore}`;
     }
+    
+    if (isFiftyPointModsOn && playerScore >= 50) {
+        clearInterval(fiftyPointsModeTimeInterval);
+        isFiftyPointModsOn = false;
+        alert("Вітаю!Ви виграли!");
+        actualRang = rangs[2];
+        rangText.textContent = `Ваш ранг: ${actualRang}`;
+        playerScore = 0;
+        aiScore = 0;
+        playerText.textContent = `Ви - ${playerScore}`;
+        computerText.textContent = `Комп'ютер - ${aiScore}`;
+    }
 }
 
 // GET AI CHOICE
@@ -169,4 +181,51 @@ fourtySecondsButton.addEventListener("click", (event) => {
             }
         }
     }, 1000);
+});
+
+// MODS 50 pointerEvents
+
+const fiftyPointsButton = document.querySelector(".rsp__mods-50points");
+let isFiftyPointModsOn = false;
+let isFiftyPointPlayerWin = false;
+let fiftyPointsModeSeconds = 50;
+let fiftyPointsModeTimeInterval;
+
+fiftyPointsButton.addEventListener("click", (event) => {
+    alert("Гра почалась! У вас лишилось 50 секунд!")
+
+    isFiftyPointModsOn = true;
+
+    clearInterval(fiftyPointsModeTimeInterval);
+    fiftyPointsModeSeconds = 50;
+
+    fiftyPointsModeTimeInterval = setInterval(() => {
+        fiftyPointsModeSeconds -= 1;
+        console.log(`Залишилося секунд: ${fiftyPointsModeSeconds}`);
+
+         if (seconds <= 0) {
+            clearInterval(fiftyPointsModeTimeInterval);
+            isFiftyPointModsOn = false;
+            alert("Час вичерпано!");
+
+            if (playerScore >= 50) {
+                alert("Вітаю!Ви виграли!");
+                clearInterval(fiftyPointsModeTimeInterval);
+                actualRang = rangs[1];
+                rangText.textContent = `Ваш ранг: ${actualRang}`;
+                playerScore = 0;
+                aiScore = 0;
+                playerText.textContent = `Ви - ${playerScore}`;
+                computerText.textContent = `Комп'ютер - ${aiScore}`;
+            } else {
+                alert("Нажаль,ви програли:(");
+                rangText.textContent = `Ваш ранг: ${actualRang}`;
+                playerScore = 0;
+                aiScore = 0;
+                playerText.textContent = `Ви - ${playerScore}`;
+                computerText.textContent = `Комп'ютер - ${aiScore}`;
+            }
+        }
+
+    }, 1000)
 });
