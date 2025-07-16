@@ -1011,7 +1011,7 @@ body {
 }
 
 .modal__name {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1026,21 +1026,18 @@ body {
   z-index: 1000;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   animation: modal 0.6s ease forwards;
+  transition: all 1.2s;
 }
-@keyframes modal {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 50%);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+
+.modal__name.modal_move {
+  transform: translate(-50%, -1000px);
 }
-.modal__name .hidden {
+
+.hidden {
   display: none;
 }
-.modal__name .modal__name__close {
+
+.modal__name__close {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -1055,23 +1052,28 @@ body {
   align-items: center;
   justify-content: center;
 }
-.modal__name .modal__name__close:hover {
+
+.modal__name__close:hover {
   outline: none;
   border: 1px solid gray;
 }
-.modal__name .modal__name__close .close-icon {
+
+.modal__name__close .close-icon {
   width: 100%;
   height: 100%;
   stroke: #000;
   stroke-width: 1.5;
 }
-.modal__name .modal__name__close:hover .close-icon {
+
+.modal__name__close:hover .close-icon {
   color: gray;
 }
-.modal__name .modal_name__text {
+
+.modal_name__text {
   margin-bottom: 24px;
 }
-.modal__name .modal_name__text .modal_name__hello {
+
+.modal_name__hello {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -1080,7 +1082,8 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.modal__name .modal_name__text .modal_name__message {
+
+.modal_name__message {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -1090,12 +1093,14 @@ body {
   line-height: normal;
   padding-top: 5px;
 }
-.modal__name .modal_name__form {
+
+.modal_name__form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.modal__name .modal_name__form .modal_name__label {
+
+.modal_name__label {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -1105,7 +1110,8 @@ body {
   line-height: normal;
   padding-bottom: 18px;
 }
-.modal__name .modal_name__form .modal_name__input {
+
+.modal_name__input {
   width: 240px;
   padding: 10px 18px;
   border: none;
@@ -1114,13 +1120,16 @@ body {
   font-size: 14px;
   margin-bottom: 16px;
 }
-.modal__name .modal_name__form .modal_name__input::-moz-placeholder {
+
+.modal_name__input::-moz-placeholder {
   color: #aaa;
 }
-.modal__name .modal_name__form .modal_name__input::placeholder {
+
+.modal_name__input::placeholder {
   color: #aaa;
 }
-.modal__name .modal_name__form .modal_name__button {
+
+.modal_name__button {
   padding: 10px 24px;
   background-color: #000;
   color: #fff;
@@ -1130,7 +1139,8 @@ body {
   cursor: pointer;
   box-shadow: 2px 2px 0 #888;
 }
-.modal__name .modal_name__form .modal_name__button:hover {
+
+.modal_name__button:hover {
   background-color: #222;
 }
 
