@@ -1,5 +1,5 @@
 .modal__name {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -14,126 +14,127 @@
   z-index: 1000;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   animation: modal 0.6s ease forwards;
+  transition: all 1.2s;
+}
 
-  @keyframes modal {
-    from {
-      opacity: 0;
-      transform: translate(-50%, 50%);
-    }
-    to {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-    }
-  }
+.modal__name.modal_move {
+  transform: translate(-50%, -1000px);
+}
 
-  .hidden {
-    display: none;
-  }
+// @keyframes modal {
+//   from {
+//     opacity: 0;
+//     transform: translate(-50%, 50%);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translate(-50%, -50%);
+//   }
+// }
 
-  .modal__name__close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 40px;
-    height: 40px;
-    padding: 9px;
-    border: none;
-    background: none;
-    border-radius: 20%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hidden {
+  display: none;
+}
 
-    // Круглый бордер при фокусе
-    &:hover {
-      outline: none;
-      border: 1px solid gray;
-    }
+.modal__name__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  border: none;
+  background: none;
+  border-radius: 20%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .close-icon {
-      width: 100%;
-      height: 100%;
-      stroke: #000;
-      stroke-width: 1.5;
-    }
+.modal__name__close:hover {
+  outline: none;
+  border: 1px solid gray;
+}
 
-    &:hover .close-icon {
-      color: gray;
-    }
-  }
+.modal__name__close .close-icon {
+  width: 100%;
+  height: 100%;
+  stroke: #000;
+  stroke-width: 1.5;
+}
 
-  .modal_name__text {
-    margin-bottom: 24px;
+.modal__name__close:hover .close-icon {
+  color: gray;
+}
 
-    .modal_name__hello {
-      color: #000;
+.modal_name__text {
+  margin-bottom: 24px;
+}
 
-      text-align: center;
-      font-family: Inter;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
+.modal_name__hello {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-    .modal_name__message {
-      color: #000;
+.modal_name__message {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 5px;
+}
 
-      text-align: center;
-      font-family: Inter;
-      font-size: 13px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      padding-top: 5px;
-    }
-  }
+.modal_name__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .modal_name__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.modal_name__label {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 18px;
+}
 
-    .modal_name__label {
-      color: #000;
+.modal_name__input {
+  width: 240px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
 
-      text-align: center;
-      font-family: Inter;
-      font-size: 13px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      padding-bottom: 18px;
-    }
+.modal_name__input::placeholder {
+  color: #aaa;
+}
 
-    .modal_name__input {
-      width: 240px;
-      padding: 10px 18px;
-      border: none;
-      border-radius: 20px;
-      background-color: #e0e0e0;
-      font-size: 14px;
-      margin-bottom: 16px;
+.modal_name__button {
+  padding: 10px 24px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #888;
+}
 
-      &::placeholder {
-        color: #aaa;
-      }
-    }
-
-    .modal_name__button {
-      padding: 10px 24px;
-      background-color: #000;
-      color: #fff;
-      border: none;
-      border-radius: 20px;
-      font-size: 14px;
-      cursor: pointer;
-      box-shadow: 2px 2px 0 #888;
-
-      &:hover {
-        background-color: #222;
-      }
-    }
-  }
+.modal_name__button:hover {
+  background-color: #222;
 }
