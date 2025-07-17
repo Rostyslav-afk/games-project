@@ -219,27 +219,139 @@ body {
   height: 160px;
   border: 1px, 0px, 1px, 0px;
   border-color: #000000;
+  padding-left: 257px;
+  padding-right: 257px;
 }
 
-.date-birthday__tilte {
+.date-birthday__title {
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: center;
+  padding-bottom: 36px;
 }
 
 .date-birthday__box {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20px;
   width: 215px;
   height: 35px;
   background: #D7D7D7;
-  display: inline-flex;
-  padding: 10px 10px 10px 10px;
-  align-items: flex-start;
-  gap: 10px;
+  overflow: hidden;
+  padding-left: 10px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.date-birthday__number {
+  border: none;
+  background-color: #D7D7D7;
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.date-birthday__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background-color: #000;
+}
+
+.date-birthday__img {
+  height: 18px;
+  width: 18px;
+}
+
+.date-birthday__text {
+  border: solid red;
+  display: inline;
+  margin-left: 149px;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.random-number {
+  height: 160px;
+  border: 1px, 0px, 1px, 0px;
+  border-color: #000000;
+  padding-left: 257px;
+  padding-right: 257px;
+}
+
+.random-number__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 36px;
+  text-align: center;
+}
+
+.random-number__box {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  width: 150px;
+  height: 35px;
+  background: #D7D7D7;
+  overflow: hidden;
+  padding-left: 10px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.random-number__number {
+  border: none;
+  background-color: #D7D7D7;
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100px;
+}
+
+.random-number__img {
+  height: 18px;
+  width: 18px;
+}
+
+.random-number__text {
+  border: solid red;
+  display: inline;
+  margin-left: 202px;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.random-number__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background-color: #000;
 }
 
 .rsp {
@@ -460,6 +572,105 @@ body {
   top: 10px;
   right: 15px;
   background: transparent;
+}
+
+.calculation {
+  padding: 36px 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculation__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.calculation__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+}
+
+.calculation__numbers {
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  height: 35px;
+  width: 135px;
+  border: hidden;
+  border-radius: 20px;
+  background: #D7D7D7;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.calculation__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 60px;
+  width: 60px;
+}
+
+.calculation__item {
+  display: inline-flex;
+  height: 25px;
+  width: 25px;
+}
+
+.calculation__btn {
+  order: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.calculation__box {
+  display: inline-flex;
+  height: 25px;
+  width: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.calculation__result {
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  height: 35px;
+  width: 135px;
+  border: hidden;
+  border-radius: 20px;
+  background: #D7D7D7;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  color: #7E7E7E;
 }
 
 .time-calculation {
@@ -1011,7 +1222,7 @@ body {
 }
 
 .modal__name {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1026,21 +1237,18 @@ body {
   z-index: 1000;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   animation: modal 0.6s ease forwards;
+  transition: all 1.2s;
 }
-@keyframes modal {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 50%);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+
+.modal__name.modal_move {
+  transform: translate(-50%, -1000px);
 }
-.modal__name .hidden {
+
+.hidden {
   display: none;
 }
-.modal__name .modal__name__close {
+
+.modal__name__close {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -1055,23 +1263,28 @@ body {
   align-items: center;
   justify-content: center;
 }
-.modal__name .modal__name__close:hover {
+
+.modal__name__close:hover {
   outline: none;
   border: 1px solid gray;
 }
-.modal__name .modal__name__close .close-icon {
+
+.modal__name__close .close-icon {
   width: 100%;
   height: 100%;
   stroke: #000;
   stroke-width: 1.5;
 }
-.modal__name .modal__name__close:hover .close-icon {
+
+.modal__name__close:hover .close-icon {
   color: gray;
 }
-.modal__name .modal_name__text {
+
+.modal_name__text {
   margin-bottom: 24px;
 }
-.modal__name .modal_name__text .modal_name__hello {
+
+.modal_name__hello {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -1080,7 +1293,8 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.modal__name .modal_name__text .modal_name__message {
+
+.modal_name__message {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -1090,12 +1304,14 @@ body {
   line-height: normal;
   padding-top: 5px;
 }
-.modal__name .modal_name__form {
+
+.modal_name__form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.modal__name .modal_name__form .modal_name__label {
+
+.modal_name__label {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -1105,7 +1321,8 @@ body {
   line-height: normal;
   padding-bottom: 18px;
 }
-.modal__name .modal_name__form .modal_name__input {
+
+.modal_name__input {
   width: 240px;
   padding: 10px 18px;
   border: none;
@@ -1114,13 +1331,16 @@ body {
   font-size: 14px;
   margin-bottom: 16px;
 }
-.modal__name .modal_name__form .modal_name__input::-moz-placeholder {
+
+.modal_name__input::-moz-placeholder {
   color: #aaa;
 }
-.modal__name .modal_name__form .modal_name__input::placeholder {
+
+.modal_name__input::placeholder {
   color: #aaa;
 }
-.modal__name .modal_name__form .modal_name__button {
+
+.modal_name__button {
   padding: 10px 24px;
   background-color: #000;
   color: #fff;
@@ -1130,7 +1350,8 @@ body {
   cursor: pointer;
   box-shadow: 2px 2px 0 #888;
 }
-.modal__name .modal_name__form .modal_name__button:hover {
+
+.modal_name__button:hover {
   background-color: #222;
 }
 
