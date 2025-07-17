@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/games-project/assets/index-952aa2aa.js"></script>
+    <script type="module" crossorigin src="/games-project/assets/index-78563255.js"></script>
     <link rel="stylesheet" href="/games-project/assets/index-12104db5.css">
   </head>
 
@@ -72,30 +72,39 @@
     <section class="date-birthday container">
   <h2 class="date-birthday__title">Перевір в який рік ти народився</h2>
   <div class="date-birthday__box">
-   
     <input
-      type="text"
+      type="number"
       placeholder="Введіть рік народження"
       class="date-birthday__number"
     />
-    <button class="date-birthday__button"><img src="../img/photo/search.webp" alt="search" class="date-birthday__img"></button>
+    <button class="date-birthday__button">
+      <img
+        src="../img/photo/search.webp"
+        alt="search"
+        class="date-birthday__img"
+      />
+    </button>
   </div>
-  <p class="date-birthday__text"></p>
+  <p class="date-birthday__text">чекаємо на відповідь</p>
 </section>
 
     <section class="random-number container">
   <h2 class="random-number__title">Вгадай число, яке загадав комп’ютер</h2>
   <div class="random-number__box">
     <input
-      type="text"
+      type="number"
       placeholder="Введіть число"
       class="random-number__number"
     />
     <button class="random-number__btn">
-      <img src="../img/photo/search.webp" alt="search" class="random-number__img" />
+      <img
+        src="../img/photo/search.webp"
+        alt="search"
+        class="random-number__img"
+      />
     </button>
   </div>
-  <p class="random-number__text"></p>
+  <p class="random-number__text">чекаємо на відповідь</p>
 </section>
 
     <section class="rsp">
@@ -166,6 +175,29 @@
 </section>
     <section class="calculation container">
   <h2 class="calculation__title">Калькулятор</h2>
+  <input type="number" placeholder="Введіть число" class="calculation__numbers" />
+  <ul class="calculation__list">
+    <li class="calculation__item">
+      <button class="calculation__btn plus">+</button>
+    </li>
+    <li class="calculation__item">
+      <button class="calculation__btn multiply">*</button>
+    </li>
+    <li class="calculation__item">
+      <button class="calculation__btn minus">-</button>
+    </li>
+    <li class="calculation__item">
+      <button class="calculation__btn divide">/</button>
+    </li>
+  </ul>
+  <input
+    type="number"
+    placeholder="Введіть число"
+    class="calculation__numbers"
+    id="number"
+  />
+  <div class="calculation__box">=</div>
+  <p class="calculation__result">Результат</p>
   <div class="calculation__div">
     <input
       type="text"
