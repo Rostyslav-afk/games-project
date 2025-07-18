@@ -932,6 +932,7 @@ body {
   overflow: hidden;
   cursor: pointer;
   border-radius: 37px;
+  margin: 0 auto;
 }
 
 .goalkeeper {
