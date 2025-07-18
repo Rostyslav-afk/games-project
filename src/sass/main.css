@@ -216,11 +216,18 @@ body {
 }
 
 .date-birthday {
-  height: 160px;
-  border: 1px, 0px, 1px, 0px;
-  border-color: #000000;
   padding-left: 257px;
   padding-right: 257px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.date-birthday__title-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 36px;
+  padding-bottom: 36px;
 }
 
 .date-birthday__title {
@@ -231,7 +238,22 @@ body {
   font-weight: 400;
   line-height: normal;
   text-align: center;
-  padding-bottom: 36px;
+}
+
+.stick {
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+.date-birthday__title:first-child {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .date-birthday__box {
@@ -239,12 +261,13 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 20px;
-  width: 215px;
+  width: 225px;
   height: 35px;
   background: #D7D7D7;
   overflow: hidden;
   padding-left: 10px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 36px;
 }
 
 .date-birthday__number {
@@ -255,7 +278,7 @@ body {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  width: 90%;
 }
 
 .date-birthday__button {
@@ -273,7 +296,6 @@ body {
 }
 
 .date-birthday__text {
-  border: solid red;
   display: inline;
   margin-left: 149px;
   text-align: right;
@@ -290,6 +312,7 @@ body {
   border-color: #000000;
   padding-left: 257px;
   padding-right: 257px;
+  padding-bottom: 36px;
 }
 
 .random-number__title {
@@ -308,12 +331,13 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 20px;
-  width: 150px;
+  width: 165px;
   height: 35px;
   background: #D7D7D7;
   overflow: hidden;
   padding-left: 10px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 36px;
 }
 
 .random-number__number {
@@ -325,7 +349,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 100px;
+  width: 75%;
 }
 
 .random-number__img {
@@ -334,7 +358,6 @@ body {
 }
 
 .random-number__text {
-  border: solid red;
   display: inline;
   margin-left: 202px;
   text-align: right;
@@ -575,7 +598,6 @@ body {
 }
 
 .calculation {
-  padding: 36px 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,6 +621,7 @@ body {
   gap: 38px;
   font-family: "Montserrat Alternates";
   font-size: 12px;
+  margin-bottom: 36px;
 }
 
 .calculation__numbers {
