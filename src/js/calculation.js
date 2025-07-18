@@ -1,5 +1,4 @@
-function calc() {
-  const firstNum = document.querySelector('.calculation__numbers');
+const firstNum = document.querySelector('.calculation__numbers');
   const secondNum = document.getElementById('number');
     const resultEl = document.querySelector('.calculation__result');
     
@@ -10,20 +9,23 @@ function calc() {
     divide: (a, b) => (b !== 0 ? a / b : 'ділення на нуль не можливе'),
   };
 
-  document.querySelectorAll('.calculation__btn').forEach(btn => {
+  document.querySelectorAll('.calculation__btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       const a = parseFloat(firstNum.value);
       const b = parseFloat(secondNum.value);
 
       if (btn.classList.contains('plus')) {
-        resultEl.textContent = operations.plus(a, b);
+          resultEl.textContent = operations.plus(a, b);
+          resultEl.style.color = "#000"
       } else if (btn.classList.contains('minus')) {
-        resultEl.textContent = operations.minus(a, b);
+          resultEl.textContent = operations.minus(a, b);
+          resultEl.style.color = '#000';
       } else if (btn.classList.contains('multiply')) {
-        resultEl.textContent = operations.multiply(a, b);
+          resultEl.textContent = operations.multiply(a, b);
+          resultEl.style.color = '#000';
       } else if (btn.classList.contains('divide')) {
-        resultEl.textContent = operations.divide(a, b);
+          resultEl.textContent = operations.divide(a, b);
+          resultEl.style.color = '#000';
       }
     });
   });
-}
