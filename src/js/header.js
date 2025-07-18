@@ -6,9 +6,9 @@ const headerLogo = document.querySelector(".header__logo");
 input.addEventListener("click", (event) => {
     body.classList.toggle("dark-mode");
 
-    if(body.classList.contains("dark-mode")){
+    if (body.classList.contains("dark-mode")) {
         headerLogo.src = "../img/photo/white-logo.webp"
-    } else{
+    } else {
         headerLogo.src = "../img/photo/logo.webp";
     }
 });
@@ -20,17 +20,71 @@ const numbersButton = document.querySelector(".b1");
 const gamesButton = document.querySelector(".b2");
 const tutorButton = document.querySelector(".b3");
 
-const numbersSections = document.querySelector(".number");
-const gamesSections = document.querySelector(".game");
-const tutorSections = document.querySelector(".tutor");
-numbersSections.style.opacity = "1";
-gamesSections.style.opacity = "1";
-tutorSections.style.opacity = "1";
+const numbersSections = document.querySelectorAll(".number");
+const gamesSections = document.querySelectorAll(".game");
+const tutorSections = document.querySelectorAll(".tutor");
+
+numbersSections.forEach(section => {
+    section.style.display = "block";
+});
+
+gamesSections.forEach(section => {
+    section.style.display = "block";
+});
+
+tutorSections.forEach(section => {
+    section.style.display = "block";
+});
+
+console.log(numbersSections, gamesSections, tutorSections)
 
 numbersButton.addEventListener("click", (event) => {
-    numbersSections.style.opacity = "1";
-    gamesSections.style.opacity = "0";
-    tutorSections.style.opacity = "0";
+    numbersSections.forEach(section => {
+        section.style.display = "block";
+    });
+
+    gamesSections.forEach(section => {
+        section.style.display = "none";
+    });
+
+    tutorSections.forEach(section => {
+        section.style.display = "none";
+    });
+
     console.log("end callback");
-    
+
+})
+
+gamesButton.addEventListener("click", (event) => {
+    numbersSections.forEach(section => {
+        section.style.display = "none";
+    });
+
+    gamesSections.forEach(section => {
+        section.style.display = "block";
+    });
+
+    tutorSections.forEach(section => {
+        section.style.display = "none";
+    });
+
+    console.log("end callback");
+
+});
+
+tutorButton.addEventListener("click", (event) => {
+    numbersSections.forEach(section => {
+        section.style.display = "none";
+    });
+
+    gamesSections.forEach(section => {
+        section.style.display = "none";
+    });
+
+    tutorSections.forEach(section => {
+        section.style.display = "block";
+    });
+
+    console.log("end callback");
+
 })
