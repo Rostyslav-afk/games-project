@@ -1,25 +1,37 @@
-<section class="our__team tutor">
-  <h2 class="our__team__title">Наша команда</h2>
+<section class="slider container">
+  <h3 class="slider__title">Наша команда</h3>
 
-  <div class="our__team__slider">
-    <button class="our__team__arrow our__team__arrow--left"></button>
-
-    <div class="our__team__member">
-      <div class="our__team__photo"></div>
-      <h3 class="our__team__name">Ім’я студента</h3>
-      <p class="our__team__description">
-        Інформація про роботу, яку він/вона виконав/ла
-      </p>
-    </div>
-
-    <button class="our__team__arrow our__team__arrow--right"></button>
+  <img class="slider__image" id="teamImage" src="" alt="Фото учасника" />
+  <div class="slider__name" id="teamName">Ім’я студента</div>
+  <div class="slider__info" id="teamInfo">
+    Інформація про роботу, яку він/вона виконав/ла
   </div>
 
-  <div class="our__team__dots">
-    <span class="our__team__dot our__team__dot__active"></span>
-    <span class="our__team__dot"></span>
-    <span class="our__team__dot"></span>
-    <span class="our__team__dot"></span>
-    <span class="our__team__dot"></span>
+  <div class="slider__nav">
+    <svg
+      class="slider__arrow"
+      id="prev"
+      xmlns="http://www.w3.org/2000/svg"
+      width="52"
+      height="102"
+      viewBox="0 0 52 102"
+      fill="none"
+    >
+      <path d="M51 1L1 51L51 101" stroke="black" />
+    </svg>
+    <svg
+      class="slider__arrow"
+      itemid="next"
+      id="next"
+      xmlns="http://www.w3.org/2000/svg"
+      width="52"
+      height="102"
+      viewBox="0 0 52 102"
+      fill="none"
+    >
+      <path d="M1 1L51 51L1 101" stroke="black" />
+    </svg>
   </div>
+
+  <div class="slider__dots" id="dots"></div>
 </section>
