@@ -7,22 +7,22 @@ const team = [
   {
     name: "Влад Д.",
     info: "Scrum Master, Розробник",
-    image: "https://img.lovepik.com/png/20231116/cartoon-coding-geek-using-a-laptop-and-headphones-vector-clipart_611738_wh860.png"
+    image: "../img/photo/vladdraga.webp"
   },
   {
     name: "Лев",
     info: "Розробник",
-    image: "https://img.lovepik.com/png/20231116/cartoon-coding-geek-using-a-laptop-and-headphones-vector-clipart_611738_wh860.png"
+    image: "../img/photo/lev.webp"
   },
   {
     name: "Давид",
     info: "Розробник",
-    image: "https://img.lovepik.com/png/20231116/cartoon-coding-geek-using-a-laptop-and-headphones-vector-clipart_611738_wh860.png"
+    image: "../img/photo/davyd.webp"
   },
   {
     name: "Микола",
     info: "Розробник",
-    image: "https://img.lovepik.com/png/20231116/cartoon-coding-geek-using-a-laptop-and-headphones-vector-clipart_611738_wh860.png"
+    image: "../img/photo/mukolafok.webp"
   },
   {
     name: "Влад К.",
@@ -32,7 +32,7 @@ const team = [
   {
     name: "Назар",
     info: "Розробник",
-    image: "https://img.lovepik.com/png/20231116/cartoon-coding-geek-using-a-laptop-and-headphones-vector-clipart_611738_wh860.png"
+    image: "../img/photo/nazar.webp"
   }
 ];
 
