@@ -14,77 +14,85 @@ input.addEventListener("click", (event) => {
 });
 
 
+
 // HEADER MODAL
 
 const numbersButton = document.querySelector(".b1");
 const gamesButton = document.querySelector(".b2");
 const tutorButton = document.querySelector(".b3");
 
-const numbersSections = document.querySelectorAll(".number");
-const gamesSections = document.querySelectorAll(".game");
-const tutorSections = document.querySelectorAll(".tutor");
+const calculationSection = document.querySelector(".calculation");
+const chooseNumberSection = document.querySelector(".choose-number");
+const dateBirthdaySection = document.querySelector(".date-birthday");
+const footbalSection = document.querySelector(".football-main-div");
+const googleDinoSection = document.querySelector(".google-dino");
+const ourTeamSection = document.querySelector(".our__team");
+const randomNumberSection = document.querySelector(".random-number");
+const rspSection = document.querySelector(".rsp");
+const timeCalculation = document.querySelector(".time-calculation");
+const scientist = document.querySelector(".scientists");
 
-numbersSections.forEach(section => {
-    section.style.display = "block";
-});
-
-gamesSections.forEach(section => {
-    section.style.display = "block";
-});
-
-tutorSections.forEach(section => {
-    section.style.display = "block";
-});
-
-console.log(numbersSections, gamesSections, tutorSections)
+calculationSection.removeAttribute("style");
+chooseNumberSection.removeAttribute("style");
+dateBirthdaySection.removeAttribute("style");
+randomNumberSection.removeAttribute("style");
+timeCalculation.removeAttribute("style");
+footbalSection.removeAttribute("style");
+googleDinoSection.removeAttribute("style");
+rspSection.removeAttribute("style");
 
 numbersButton.addEventListener("click", (event) => {
-    numbersSections.forEach(section => {
-        section.style.display = "block";
-    });
+    // NUMBERS ON
+    calculationSection.removeAttribute("style");
+    chooseNumberSection.removeAttribute("style");
+    dateBirthdaySection.removeAttribute("style");
+    randomNumberSection.removeAttribute("style");
+    timeCalculation.removeAttribute("style");
 
-    gamesSections.forEach(section => {
-        section.style.display = "none";
-    });
+    // GAMES OFF
+    footbalSection.style.display = "none";
+    googleDinoSection.style.display = "none";
+    rspSection.style.display = "none";
 
-    tutorSections.forEach(section => {
-        section.style.display = "none";
-    });
+    // TUTORIAL OFF
+    ourTeamSection.style.display = "none";
+    scientist.style.display = "none";
+});
 
-    console.log("end callback");
 
-})
 
 gamesButton.addEventListener("click", (event) => {
-    numbersSections.forEach(section => {
-        section.style.display = "none";
-    });
+    // NUMBERS OFF
+    calculationSection.style.display = "none";
+    chooseNumberSection.style.display = "none";
+    dateBirthdaySection.style.display = "none";
+    randomNumberSection.style.display = "none";
+    timeCalculation.style.display = "none";
 
-    gamesSections.forEach(section => {
-        section.style.display = "block";
-    });
+    // GAMES ON
+    footbalSection.removeAttribute("style");
+    googleDinoSection.removeAttribute("style");
+    rspSection.removeAttribute("style");
 
-    tutorSections.forEach(section => {
-        section.style.display = "none";
-    });
-
-    console.log("end callback");
-
+    // TUTORIAL OFF
+    ourTeamSection.style.display = "none";
+    scientist.style.display = "none";
 });
 
 tutorButton.addEventListener("click", (event) => {
-    numbersSections.forEach(section => {
-        section.style.display = "none";
-    });
+    // NUMBERS OFF
+    calculationSection.style.display = "none";
+    chooseNumberSection.style.display = "none";
+    dateBirthdaySection.style.display = "none";
+    randomNumberSection.style.display = "none";
+    timeCalculation.style.display = "none";
 
-    gamesSections.forEach(section => {
-        section.style.display = "none";
-    });
+    // GAMES OFF
+    footbalSection.style.display = "none";
+    googleDinoSection.style.display = "none";
+    rspSection.style.display = "none";
 
-    tutorSections.forEach(section => {
-        section.style.display = "block";
-    });
-
-    console.log("end callback");
-
-})
+    // TUTORIAL ON
+    ourTeamSection.removeAttribute("style");
+    scientist.removeAttribute("style");
+});
