@@ -14,6 +14,7 @@ input.addEventListener("click", (event) => {
 });
 
 
+
 // HEADER MODAL
 
 const numbersButton = document.querySelector(".b1");
@@ -29,23 +30,24 @@ const ourTeamSection = document.querySelector(".our__team");
 const randomNumberSection = document.querySelector(".random-number");
 const rspSection = document.querySelector(".rsp");
 const timeCalculation = document.querySelector(".time-calculation");
+const scientist = document.querySelector(".scientists");
 
-calculationSection.style.opacity = "1";
-chooseNumberSection.style.display = "block";
-dateBirthdaySection.style.display = "block";
-randomNumberSection.style.display = "block";
-timeCalculation.style.display = "block";
-footbalSection.style.display = "block";
-googleDinoSection.style.display = "block";
-rspSection.style.display = "block";
+calculationSection.removeAttribute("style");
+chooseNumberSection.removeAttribute("style");
+dateBirthdaySection.removeAttribute("style");
+randomNumberSection.removeAttribute("style");
+timeCalculation.removeAttribute("style");
+footbalSection.removeAttribute("style");
+googleDinoSection.removeAttribute("style");
+rspSection.removeAttribute("style");
 
 numbersButton.addEventListener("click", (event) => {
     // NUMBERS ON
-    calculationSection.style.opacity = "1";
-    chooseNumberSection.style.display = "block";
-    dateBirthdaySection.style.display = "block";
-    randomNumberSection.style.display = "block";
-    timeCalculation.style.display = "block";
+    calculationSection.removeAttribute("style");
+    chooseNumberSection.removeAttribute("style");
+    dateBirthdaySection.removeAttribute("style");
+    randomNumberSection.removeAttribute("style");
+    timeCalculation.removeAttribute("style");
 
     // GAMES OFF
     footbalSection.style.display = "none";
@@ -54,30 +56,32 @@ numbersButton.addEventListener("click", (event) => {
 
     // TUTORIAL OFF
     ourTeamSection.style.display = "none";
+    scientist.style.display = "none";
 });
 
 
 
 gamesButton.addEventListener("click", (event) => {
     // NUMBERS OFF
-    calculationSection.style.opacity = "0";
+    calculationSection.style.display = "none";
     chooseNumberSection.style.display = "none";
     dateBirthdaySection.style.display = "none";
     randomNumberSection.style.display = "none";
     timeCalculation.style.display = "none";
 
     // GAMES ON
-    footbalSection.style.display = "block";
-    googleDinoSection.style.display = "block";
-    rspSection.style.display = "block";
+    footbalSection.removeAttribute("style");
+    googleDinoSection.removeAttribute("style");
+    rspSection.removeAttribute("style");
 
     // TUTORIAL OFF
     ourTeamSection.style.display = "none";
+    scientist.style.display = "none";
 });
 
 tutorButton.addEventListener("click", (event) => {
     // NUMBERS OFF
-    calculationSection.style.opacity = "0";
+    calculationSection.style.display = "none";
     chooseNumberSection.style.display = "none";
     dateBirthdaySection.style.display = "none";
     randomNumberSection.style.display = "none";
@@ -89,5 +93,6 @@ tutorButton.addEventListener("click", (event) => {
     rspSection.style.display = "none";
 
     // TUTORIAL ON
-    ourTeamSection.style.display = "block";
+    ourTeamSection.removeAttribute("style");
+    scientist.removeAttribute("style");
 });
