@@ -19,14 +19,14 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/games-project/assets/index-c3b5db63.js"></script>
+    <script type="module" crossorigin src="/games-project/assets/index-4ccd6035.js"></script>
     <link rel="stylesheet" href="/games-project/assets/index-93791fad.css">
   </head>
 
   <body>
     <header class="header">
     <div class="container box">
-        <img src="../img/photo/logo.webp" alt="logo" class="header__logo">
+        <a href="../index.html"><img src="../img/photo/logo.webp" alt="logo" class="header__logo"></a>
         <div class="header__box">
             <nav class="header__nav">
                 <ul class="header__list">
@@ -50,10 +50,10 @@
                         </div>
                     </li>
                     <li class="header__item">
-                        <p class="header__text">Наша команда</p>
+                        <a href="#our__team" class="header__text">Наша команда</a>
                     </li>
                     <li class="header__item">
-                        <p class="header__text">Контакти</p>
+                        <a href="#footer" class="header__text">Контакти</a>
                     </li>
                 </ul>
             </nav>
@@ -70,6 +70,7 @@
     </div>
 </header>
     <section class="date-birthday container">
+  <h2 class="date-birthday__title">Перевір в який рік ти народився</h2>
   <div class="date-birthday__title-box">
     <h2 class="date-birthday__title">Популярні інетрактивні ігри</h2>
     <div class="stick"></div>
@@ -93,6 +94,7 @@
   <div class="stick"></div>
 </section>
     <section class="random-number container">
+  <h2 class="random-number__title">Вгадай число, яке загадав комп’ютер</h2>
   <h2 class="random-number__title">Вгадай число, яке загадав комп’ютер, від 1 до 10</h2>
   <div class="random-number__box">
     <input
@@ -111,7 +113,7 @@
   <p class="random-number__text">чекаємо на відповідь</p>
   <div class="stick"></div>
 </section>
-    <section class="rsp game">
+    <section class="rsp">
     <div class="container">
         <h2 class="rsp__title">Камінь - ножиці - папір</h2>
         <div class="rsp__wrapper">
@@ -177,7 +179,7 @@
         </div>
     </div>
 </section>
-    <section class="calculation container number">
+    <section class="calculation container">
   <h2 class="calculation__title">Калькулятор</h2>
   <div class="calculation__div">
     <input
@@ -211,7 +213,7 @@
   <div class="stick"></div>
 </section>
 
-    <section class="time-calculation number">
+    <section class="time-calculation">
     <div class="container">
         <h2 class="timeCalcul_title">Калькулятор часу</h2>
         <div class="row">
@@ -226,7 +228,7 @@
     </div>
     </div>
 </section>
-    <section class="google-dino game">
+    <section class="google-dino">
   <div class="container">
     <h2 class="title_dino">Google динозавр</h2>
     <div class="scoreRecord">
@@ -244,7 +246,9 @@
   </div>
 </section>
 
-      <div class="football-main-div game">
+      <div class="football-main-div">
+    <div class="football-main-container">
+  <div class="football-main-div game">
     <div class="container">
   <h2 class="football-h2">Футбол</h2>
   <p class="goal-counter">Голів: <span id="goal-count">0</span></p>
@@ -258,7 +262,7 @@
   </div>
   </div>
   </div>
-    <section class="choose-number number">
+    <section class="choose-number">
 <div class="choose-number-container">
 <h2 class="choose-number-title">Введіть 3 числа</h2>
 <ul class="choose-number-ul">
@@ -271,7 +275,9 @@
 <p class="choose-number-text" id="choose-number-text-3">Середне число, яке ви ввели - </p>
 </div>
 </section>
-    <section class="slider container">
+    <section class="our__team" id="our__team">
+  <h2 class="our__team__title">Наша команда</h2>
+<section class="slider container">
   <h3 class="slider__title">Наша команда</h3>
 
   <img class="slider__image" id="teamImage" src="" alt="Фото учасника" />
@@ -310,6 +316,7 @@
 </section>
 
     <section class="scientists">
+  <div class="container">
   <div class="container section-box">
     <h2 class="scientists__title">Обери вченого/их</h2>
 
@@ -342,7 +349,7 @@
       </div>
   </div>
 </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
     <div class="container footer__bex">
     <a href="./index.html" class="footer__logo">
         <img src="data:image/webp;base64,UklGRrIFAABXRUJQVlA4WAoAAAAQAAAApAAARQAAQUxQSHMEAAAB8FZtW95s27YtEnDQVQISkICDDQcbDoqDxAF1kM0BEpCABCQsY+yFNJCk58eviHDgtm0keew92457ZwbzAvyHOOzvV0Sg+YZQNX3FN0f3FZmq2u9R86VgGHZNFH6hRKrJ4oFU7PtTYjbfB5kpmDYBI9TC6r9RLlkTWaNCID00g/paBdnXppBIfckFSzcVu05SsgDeTHfrQgxWRtCsBOkSS6taqGCbfypr8nqi4WdlyYVc1CD8Jufjt3IFVtI1Iy6TaZoyVw1AAv9GcJGlOTPp5rQU/L5LFOdmIe6MHpGLQ7OYpnpkbna8uZv4x0XSp5I327tKJUdpYdIDQAzwjZl+jLYm4pSusKqrKSMgNU7dw8unNTRz8yFx2THhE38aOL5RtlzX8CpVN85KXX3Y6MvMPo6knR4tfmzIXKRJzvAPW9sCvu6jbqopLzf5Wpum1pkopJodLapPw9z2E2OtCqY3EfbBthz/duEoO85mnoOpjxbPwlp3giSHlf3Y20fqjRkg5d7+cSg5Mvl6j0G3rSXTv6S0U1uP18402UfcRxped6RU9REbP51EsUzga9/9XntoOrxq3z/HsZW9Pj4q5gO9wfoxKJtBw2W/ZKp+MGj4vqndYew5ezIc1ud3c2B3U1O48tnhR0PVrTVc8t68V+U4VJfthwyz1IaH57A4BWUSA+AYNWBKlaY5treJnI6irf8WllQdwyy14eEpdJnvI7um0EKSSbBnYlUDAFzKeRUwHNTh8PAcQqxzO+aMdYI9E1YBRt7mTGOk34eN+rDo2sM68s8fDvPCVyIdnpQ56sLDu1GV4hSgnlznqAsPD1fhwpRElsI6T0Lm41U4lXOmkVXT1F6x3JKH1+Wh8HCQ99JYeDjKO2kwPBzm7QVHrpjAe6go7OBYeHgLnly3Sk5yfm8ZMs0aA+ffWRi+blowAk9Oucm4kCe9yaY6/I52QSCfA5fts+7iPclw2r3rR9dK1eFMkuXKgu6Ri2ACf0b++buyoGq3voYMnMiVdFcWpHSxlllxJjMpVxZcbb4szlucSCHLpYW0ujb7eqAsiTKNlozXkzxjdJ2Fv2Z4RYftcaDKm8UsRtJeTr/JiHZJNdUyKgGSgXTw8moWC6ku9zl1N507D0nBOWA7dHGMWRQyYwQ/p+QIdrdtHbCaJsWr+WK2ZgLomATqr9kJkx+nI9dhnQrZ3lXzbgHQZHMvpTUgSYuBjgCiVQlQg9xIczXBhL0B16SKTUnNOZPCAqAI/ANuBaRCaUjCGCt5OQHJd8ptLJLbnXQTIEH4wC+B8pD8DzE3zgRD1GS6nqBe0Wqxy9ZV+eW6/vSSQnLbM4Vlq4/os15CeEInN1iYJ/3F1OUPMXpzYPGwFlZgHWDNK6z//nCAT9GMnieRekiXPl5Zje/MtXNG1sND5fJSRQPD3CaEhy+PayPWxzyLK2/7+IzE10RkUm6KqCdCkeWuj0hkbPNgyXjXh/IC0sTOJu1dH8ozM1FIuS3kb+Y/GXf9EpOeWFa1uC0N/h96AABWUDggGAEAALALAJ0BKqUARgAAAAAlpbt0HiAfoBkgPxA/FXSAfgB+oGWA/jX4O/kBrkH43a4D+k+YF+S/kB1AH6EfzT8a/6z8gHUS/pWmkii8klYZjsiY02ioTk5w8tenzJ402iY02iY02iYeAAD+/99u2t/orG7uh7TI3TCIj3DkcH9fWR6sjT/++Mdk9s3tNO/9Lt//dW1T/69MolngYG//VBeOdRGjvVDVDi//kH9RHXlgpNNt2xczgO64o5xr0jLEylx6mlmZ5V/0MTypcccx0PbTVUeHtZ+jD5F8+r9KDv66eHpj5/RmPP//0zmOzD4CS3/P/5wrCWnN5fRNz1gnnbCmD9Xy4pVu44lAh55Ttdav++7uAAAAAAAAAAA=" alt="logo" class="logo__img">
