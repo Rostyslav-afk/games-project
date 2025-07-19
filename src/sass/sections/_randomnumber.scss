@@ -5,6 +5,7 @@
   border-color: #000000;
   padding-left: 257px;
   padding-right: 257px;
+  padding-bottom: 36px;
 }
 
 .random-number__title{
@@ -16,6 +17,7 @@
   line-height: normal;
   padding-bottom: 36px;
   text-align: center;
+
 }
 
 .random-number__box{
@@ -23,13 +25,13 @@
   justify-content: space-between;
     align-items: center;
   border-radius: 20px;
-  width: 150px;
+  width: 165px;
   height: 35px;
   background: #D7D7D7;
   overflow: hidden;
 padding-left: 10px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-
+  margin-bottom: 36px;
 }
 
 .random-number__number{
@@ -41,7 +43,7 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-width: 100px;
+  width: 75%;
 }
 
 .random-number__img{
@@ -50,7 +52,6 @@ width: 100px;
 }
 
 .random-number__text{
-  border: solid red;
   display: inline;
   margin-left: 202px;
   text-align: right;
