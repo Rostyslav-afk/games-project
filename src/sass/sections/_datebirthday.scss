@@ -1,15 +1,15 @@
 .date-birthday {
-    padding-left: 257px;
+  padding-left: 257px;
   padding-right: 257px;
   padding-top: 36px;
   padding-bottom: 36px;
 }
 
 .date-birthday__title-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 36px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 36px;
   padding-bottom: 36px;
 }
 
@@ -25,44 +25,44 @@
 }
 
 .stick {
-    width: 536px;
-    height: 1px;
-    background-color: #000;
-    margin: 0 auto;
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+  margin: 0 auto;
 }
 
 .date-birthday__title:first-child {
-color: #000;
-font-family: "Montserrat Alternates";
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .date-birthday__box {
   display: inline-flex;
   justify-content: space-between;
-    align-items: center;
+  align-items: center;
   border-radius: 20px;
   width: 225px;
   height: 35px;
   background: #D7D7D7;
   overflow: hidden;
-padding-left: 10px;
+  padding-left: 10px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-margin-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .date-birthday__number {
   border: none;
   background-color: #D7D7D7;
   color: #7E7E7E;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-width: 90%;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  width: 90%;
 }
 
 .date-birthday__button {
@@ -79,13 +79,13 @@ width: 90%;
   width: 18px;
 }
 
-.date-birthday__text{
+.date-birthday__text {
   display: inline;
   margin-left: 149px;
   text-align: right;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
