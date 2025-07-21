@@ -1,3 +1,7 @@
+import darkLogo from "/img/photo/logo.webp";
+import whiteLogo from "/img/photo/white-logo.webp";
+
+
 const input = document.querySelector(".header__input");
 const body = document.querySelector("body");
 const container = document.querySelector(".container");
@@ -7,8 +11,8 @@ input.addEventListener("click", (event) => {
     body.classList.toggle("dark-mode");
 
     if (body.classList.contains("dark-mode")) {
-        headerLogo.src = "./img/photo/white-logo.webp"
+        headerLogo.src = whiteLogo;
     } else {
-        headerLogo.src = "./img/photo/logo.webp";
+        headerLogo.src = darkLogo;
     }
 });
