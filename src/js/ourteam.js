@@ -7,22 +7,22 @@ const team = [
   {
     name: "Влад Д.",
     info: "Scrum Master, Розробник",
-    image: "../img/photo/vladdraga.webp"
+    image: "./img/photo/vladdraga.webp"
   },
   {
     name: "Лев",
     info: "Розробник",
-    image: "../img/photo/lev.webp"
+    image: "./img/photo/lev.webp"
   },
   {
     name: "Давид",
     info: "Розробник",
-    image: "../img/photo/davyd.webp"
+    image: "./img/photo/davyd.webp"
   },
   {
     name: "Микола",
     info: "Розробник",
-    image: "../img/photo/mukolafok.webp"
+    image: "./img/photo/mukolafok.webp"
   },
   {
     name: "Влад К.",
@@ -32,7 +32,7 @@ const team = [
   {
     name: "Назар",
     info: "Розробник",
-    image: "../img/photo/nazar.webp"
+    image: "./img/photo/nazar.webp"
   }
 ];
 

@@ -7,8 +7,8 @@ input.addEventListener("click", (event) => {
     body.classList.toggle("dark-mode");
 
     if (body.classList.contains("dark-mode")) {
-        headerLogo.src = "../img/photo/white-logo.webp"
+        headerLogo.src = "./img/photo/white-logo.webp"
     } else {
-        headerLogo.src = "../img/photo/logo.webp";
+        headerLogo.src = "./img/photo/logo.webp";
     }
 });
