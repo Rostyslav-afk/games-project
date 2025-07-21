@@ -1,6 +1,7 @@
 import darkLogo from "/img/photo/logo.webp";
 import whiteLogo from "/img/photo/white-logo.webp";
-
+import bodyBackground from "/img/photo/bg.webp";
+document.body.style.backgroundImage = `url(${bodyBackground})`;
 
 const input = document.querySelector(".header__input");
 const body = document.querySelector("body");
