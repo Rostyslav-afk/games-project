@@ -1,3 +1,13 @@
+import vladdraga from '/img/photo/vladdraga.webp';
+import lev from '/img/photo/lev.webp';
+import davyd from '/img/photo/davyd.webp';
+import mukolafok from '/img/photo/mukolafok.webp';
+import nazar from '/img/photo/nazar.webp';
+
+
+
+
+
 const team = [
   {
     name: "Ростислав",
@@ -7,22 +17,22 @@ const team = [
   {
     name: "Влад Д.",
     info: "Scrum Master, Розробник",
-    image: "../src/img/photo/vladdraga.webp"
+    image: vladdraga
   },
   {
     name: "Лев",
     info: "Розробник",
-    image: "../src/img/photo/lev.webp"
+    image: lev
   },
   {
     name: "Давид",
     info: "Розробник",
-    image: "../src/img/photo/davyd.webp"
+    image: davyd
   },
   {
     name: "Микола",
     info: "Розробник",
-    image: "../src/img/photo/mukolafok.webp"
+    image: mukolafok
   },
   {
     name: "Влад К.",
@@ -32,7 +42,7 @@ const team = [
   {
     name: "Назар",
     info: "Розробник",
-    image: "../src/img/photo/nazar.webp"
+    image: nazar
   }
 ];
 
