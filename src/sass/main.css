@@ -37,7 +37,7 @@ body {
 }
 
 body {
-  background-image: url(../../img/photo/bg.webp);
+  background-image: url(../img/photo/bg.webp);
 }
 
 .container {
@@ -56,6 +56,9 @@ body {
   background-color: #333333;
 }
 .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5 {
+  color: #fff;
+}
+.dark-mode .date-birtday__title:nth-child(1) {
   color: #fff;
 }
 .dark-mode a, .dark-mode p {
