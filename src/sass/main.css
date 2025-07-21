@@ -67,6 +67,9 @@ body {
 .dark-mode .rsp__modal-close {
   color: #fff;
 }
+.dark-mode .scientific__card {
+  background: #333333;
+}
 
 .header {
   padding-top: 21px;
@@ -196,7 +199,7 @@ body {
   background-color: white;
   border: 1px solid var(--black-color);
   border-radius: 50%;
-  background-image: url("../../img/photo/sun-icon.webp");
+  background-image: url("../img/photo/sun-icon.webp");
   background-size: 15px 14px;
   background-repeat: no-repeat;
   background-position: center;
@@ -205,7 +208,7 @@ body {
 .header__products .header__input:checked + label::after {
   left: 19.5px;
   background-color: #000;
-  background-image: url("../../img/photo/moon-icon.webp");
+  background-image: url("../img/photo/moon-icon.webp");
 }
 .header__texter {
   color: #000;
