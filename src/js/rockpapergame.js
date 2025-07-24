@@ -34,21 +34,18 @@ let aiScore = 0;
 
 stoneButton.addEventListener("click", (event) => {
     playerChoice = choice[0];
-    sound.play();
     getAiChoice();
     checkChoices();
 });
 
 scissorsButton.addEventListener("click", (event) => {
     playerChoice = choice[1];
-    sound.play();
     getAiChoice();
     checkChoices();
 });
 
 paperButton.addEventListener("click", (event) => {
     playerChoice = choice[2];
-    sound.play();
     getAiChoice();
     checkChoices();
 });
@@ -126,12 +123,14 @@ const instructionButton = document.querySelector(".rsp__mods-instruction");
 
 
 instructionButton.addEventListener("click", (event) => {
+    sound.play();
     instructionModal.style.opacity = "1";
     instructionModalBackdrop.style.opacity = "1";
     instructionModalBackdrop.style.pointerEvents = "all";
 });
 
 instructionModalClose.addEventListener("click", (event) => {
+    sound.play();
     instructionModal.style.opacity = "0";
     instructionModalBackdrop.style.opacity = "0";
     instructionModalBackdrop.style.pointerEvents = "none";
