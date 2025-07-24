@@ -203,7 +203,7 @@ fiftyPointsButton.addEventListener("click", (event) => {
         fiftyPointsModeSeconds -= 1;
         console.log(`Залишилося секунд: ${fiftyPointsModeSeconds}`);
 
-         if (seconds <= 0) {
+         if (fiftyPointsModeSeconds <= 0) {
             clearInterval(fiftyPointsModeTimeInterval);
             isFiftyPointModsOn = false;
             alert("Час вичерпано!");
